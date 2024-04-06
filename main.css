@@ -1,0 +1,63 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*adds vertical scroll bar*/
+    overflow-y: auto;
+    
+}
+
+
+
+nav{
+    opacity:50%;
+    background-color: black;
+}
+
+
+
+
+h1{
+    font-family: 'Apple Chancery', cursive;
+    font-weight: bold;
+    font-style: italic; 
+    color: rgb(187, 187, 187);
+    text-align: center;
+    text-shadow:6px 6px 6px rgb(153, 25, 25);
+
+}
+
+
+body{
+    font-family: Apple Chancery, cursive;
+    font-weight: bold;
+    font-style: italic;
+    background-image: url("blackSatin.jpg");
+}
+
+p{
+    font-size: medium;
+    font-weight: lighter;
+}
+
+
+
+
+footer{
+    text-align:center;
+    color: rgb(187, 187, 187);
+    text-shadow:6px 6px 6px rgb(114, 18, 18);
+    font-family: Apple Chancery, cursive;
+}
+
+/*image between copyright and email*/
+.hearts{
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+/*Email address*/
+a{
+    color: rgb(224, 29, 104);
+}

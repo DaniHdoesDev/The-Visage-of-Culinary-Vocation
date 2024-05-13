@@ -28,9 +28,9 @@ body{
 h1, h2{
     font-weight: bold;
     font-style: italic; 
-    color: rgb(155, 133, 38);
+    color: rgb(230, 199, 63);
     text-align: center;
-    text-shadow:6px 6px 6px rgb(128, 50, 34);
+    text-shadow:6px 6px 6px rgb(138, 51, 34);
 }
 
 /*baquette image in right corner*/
@@ -49,8 +49,8 @@ img{
 aside{
     width: 20%;
     float: right;
-    background-color:rgb(160, 65, 46);
-    color: rgb(255, 251, 251);
+    background-color:rgb(201, 80, 56);
+    color: rgb(236, 220, 220);
     padding: 5px;
     margin: 10px;
     height: 50%;

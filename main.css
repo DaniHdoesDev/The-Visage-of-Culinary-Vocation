@@ -32,7 +32,7 @@ a {
   
   /* Hamburger */
   .hamburger1 {
-    height: 45px;
+    height: 15px;
     margin: 10px;
     display: inline-block;
     grid-template-rows: repeat(3, 1fr);
@@ -73,7 +73,7 @@ a {
   
   
   #toggle1:checked ~ .menu1 {
-    height: 350px;
+    height: 250px;
     left: 20px;
   }
   
@@ -81,19 +81,20 @@ a {
   /* Menu */
   .menu1 {
     width: 50%;
-    background-color: #000000;
+    background-color: #000000cc;
     margin-left: 0;
     display: -ms-grid;
     display: grid;
     grid-template-rows: 1fr repeat(4, 0.5fr);
-    grid-row-gap: 10px;
+    grid-row-gap: 5px;
     list-style: none;
     left: -150px; /* Position the menu to the left */
-    width: 20%;
+    width: 15%; /*Width of menu*/
     text-align: left;
     height: 0px;
     overflow: hidden;
-    z-index: 120;
+    position: absolute;
+    z-index: 5;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity: 0.6;
@@ -108,17 +109,20 @@ a {
   }
   
   .link1 {
-    width: 75%;
-    padding: 5px;
+    width: 100%;
+   /* padding: 5px; */
+    color:rgb(255, 255, 255);
     font-family: 'Apple Chancery', cursive;
-    opacity: 0.7;
+    text-shadow:6px 6px 6px rgb(143, 7, 30);
+    opacity: 0.8;
   }
   
   .link1:hover {
-    background-color: #a51111;
+    background-color: #474747;
     color: rgb(255, 255, 255);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    text-shadow:6px 6px 6px rgb(143, 7, 30);
     opacity: 0.8;
   }
 

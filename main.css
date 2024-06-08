@@ -24,6 +24,7 @@ a {
     color: #fff;
     text-decoration: none;
     opacity: 0.7;
+    border-radius: 10px;
   }
   
   .p-menu1{
@@ -73,7 +74,7 @@ a {
   
   
   #toggle1:checked ~ .menu1 {
-    height: 250px;
+    height: 150px;
     left: 20px;
   }
   
@@ -81,7 +82,7 @@ a {
   /* Menu */
   .menu1 {
     width: 50%;
-    background-color: #000000cc;
+    background-color: #ec3636cc;
     margin-left: 0;
     display: -ms-grid;
     display: grid;
@@ -98,6 +99,7 @@ a {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity: 0.6;
+    border-radius: 10px;
   }
   
   .menu1 a:first-child {
@@ -115,6 +117,7 @@ a {
     font-family: 'Apple Chancery', cursive;
     text-shadow:6px 6px 6px rgb(143, 7, 30);
     opacity: 0.8;
+    border-radius: 10px;
   }
   
   .link1:hover {
@@ -124,12 +127,13 @@ a {
     transition: all 0.3s ease;
     text-shadow:6px 6px 6px rgb(143, 7, 30);
     opacity: 0.8;
+    border-radius: 10px;
   }
 
 /* Navigation Bar closed*/
 
 /*Titles*/
-h1, h3{
+h1, h2, h3{
     font-family: 'Apple Chancery', cursive;
     font-weight: bold;
     font-style: italic; 

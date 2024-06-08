@@ -18,10 +18,78 @@ body{
 }
 ::-webkit-scrollbar-thumb{
     opacity: 0.5;
-    background-color: rgb(227, 115, 94);
+    background-color: rgb(187, 86, 68);
     height: 20%;
     border-radius: 10px;
 }
+
+/*Navigation Bar*/
+
+/*changes items in drop down list*/
+a {
+    color: rgb(230, 199, 63);
+    text-decoration: none;
+    opacity: 0.8;
+  }
+/*height or drop down menu*/
+  .vc-menu{
+    height: 22%
+  }
+
+  
+
+  /*Menu*/
+  aside{
+   
+    background-color:rgb(201, 80, 56);
+    margin-left: 15px;
+    display: -ms-grid;
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    list-style: none;
+    /* Position the menu to the left */
+    left: 10px; 
+    /*Width of menu*/
+    width: 14%; 
+    text-align: left;
+    height: 24px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  .menu-drop a:first-child {
+    margin-top: 5px;
+  }
+  
+  menu-drop a:last-child {
+    margin-bottom: 5px;
+  }
+  .link1 {
+    width: 100%;
+    font-family: 'Apple Chancery', cursive;
+    font-weight: bolder;
+    font-size: large;
+    text-shadow:6px 6px 6px #0a3d21;
+    opacity: 0.8;
+  }
+  .link1:hover {
+    background-color: #0a3d21;
+    color: rgb(255, 252, 252);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+/*End of navigation*/
+
 
 
 /*Titles of page*/
@@ -30,31 +98,135 @@ h1, h2{
     font-style: italic; 
     color: rgb(230, 199, 63);
     text-align: center;
-    text-shadow:6px 6px 6px rgb(138, 51, 34);
+    text-shadow:6px 6px 6px rgb(201, 80, 56);
 }
 
 /*baquette image in right corner*/
 img{
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    position: fixed;
+    position: absolute;
     top:10px;
-    width: 5%;
-    height: 30%; 
+    height: 35%; 
     right: 5px;
     resize: horizontal;
     margin-right: 5%;
     border: 5px solid rgb(155, 133, 38);
 }
 
-aside{
+blockquote{
+  color: rgb(201, 80, 56);
+  background-color:rgb(230, 199, 63);
+  border-radius: 10px;
+  width: 23%;
+  margin-left: 10px;
+}
+
+section{
     width: 20%;
     float: right;
     background-color:rgb(201, 80, 56);
-    color: rgb(236, 220, 220);
+    color: rgb(230, 199, 63);
+    font-weight: lighter;
     padding: 5px;
     margin: 10px;
+    margin-right: auto;
     height: 50%;
     opacity: .8;
     border-radius: 10px;
+    text-shadow:6px 6px 6px #0a381e;
 }
 
+.recipe-container{
+  width:21%;
+  display: flex;
+  /*horizontal scrolling for cards*/
+  white-space: nowrap;
+}
+
+
+.french-container, .jambalaya-container, .mostaccoli-container, .lemchicken-container{
+  flex-direction: row;
+  margin-inline-start: 0%;
+  margin-left: 100px;
+  margin-right: 130px;
+  border-radius: 10px;
+  /* Width of each recipe card */
+  width: 100px;
+  /* Height of each card*/
+  height: 30px;
+
+}
+
+
+.recipe-front, .recipe-back{
+  border-radius: 10px;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  /*does not show back of card*/
+  backface-visibility: hidden;
+}
+
+.recipe-front{
+  /* visible */
+  transform: rotateY(0deg); 
+  transition: transform 0.6s ease;
+  background-color: black;
+}
+
+.recipe-back {
+  background-color:rgb(19, 54, 8);
+  /*Hidden*/
+  transform: rotateY(180deg); 
+  transition: transform 0.6s ease;
+}
+
+
+.french-card:hover .recipe-front {
+  flex-direction: row;
+  /* Flips card when hovered */
+  transform: rotateY(-180deg); 
+}
+
+.french-card:hover .recipe-back {
+  flex-direction: row;
+  /* Shows the back of the card */
+  transform: rotateY(0deg); 
+}
+
+.jambalaya-card:hover .recipe-front {
+  flex-direction: row;
+  /* Flips card when hovered */
+  transform: rotateY(-180deg); 
+}
+
+.jambalaya-card:hover .recipe-back {
+  flex-direction: row;
+  /* Shows the back of the card */
+  transform: rotateY(0deg); 
+}
+
+.mostaccoli-card:hover .recipe-front {
+  flex-direction: row;
+  /* Flips card when hovered */
+  transform: rotateY(-180deg); 
+}
+
+.mostaccoli-card:hover .recipe-back {
+  flex-direction: row;
+  /* Shows the back of the card */
+  transform: rotateY(0deg); 
+}
+
+
+.lemchicken-card:hover .recipe-front {
+  flex-direction: row;
+  /* Flips card when hovered */
+  transform: rotateY(-180deg); 
+}
+
+.lemchicken-card:hover .recipe-back {
+  flex-direction: row;
+  /* Shows the back of the card */
+  transform: rotateY(0deg); 
+}
